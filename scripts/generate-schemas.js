@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { parse } from "yaml";
 
 const spec = parse(readFileSync("generated/openapi.yaml", "utf-8"));
@@ -47,5 +47,6 @@ for (const [name, schema] of Object.entries(schemas)) {
   lines.push("");
 }
 
+mkdirSync("src/generated", { recursive: true });
 writeFileSync("src/generated/schemas.ts", lines.join("\n"));
 console.log("Generated src/generated/schemas.ts");
