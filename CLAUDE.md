@@ -13,3 +13,16 @@
 - シークレットは環境変数経由で渡す（ハードコード禁止）
 - Infrastructure as Code は `infrastructure/` 配下に集約する
 - ドキュメント・図は `docs/` 配下に置く
+
+# コマンド
+
+```bash
+pnpm install          # 依存関係インストール
+pnpm generate         # TypeSpec → OpenAPI → TypeScript 型を生成
+pnpm dev              # ローカル開発サーバー起動 (http://localhost:3000)
+pnpm build            # Lambda 用バンドル生成 (dist/index.mjs)
+pnpm test:run         # テスト
+pnpm typecheck        # 型検査
+pnpm lint             # lint (Biome)
+pnpm lint:fix         # lint 自動修正
+```

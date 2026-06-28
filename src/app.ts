@@ -6,7 +6,7 @@
 import { Scalar } from "@scalar/hono-api-reference";
 import { Hono } from "hono";
 import { secureHeaders } from "hono/secure-headers";
-import users from "./routes/users.js";
+import users from "@/presentation/users.js";
 import openapiSpec from "../generated/openapi.yaml";
 
 const app = new Hono();

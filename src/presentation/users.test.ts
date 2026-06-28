@@ -1,17 +1,15 @@
 import { Hono } from "hono";
 import { beforeEach, describe, expect, it } from "vitest";
-import { userRepository } from "../repository/userRepository.js";
-import users from "./users.js";
+import users, { userService } from "./users.js";
 
-// openapi.json への依存を避けるため、users ルートのみを mount した最小アプリでテストする
 const app = new Hono();
 app.route("/users", users);
 
 type JsonRecord = Record<string, unknown>;
 
 beforeEach(() => {
-  for (const user of userRepository.findAll()) {
-    userRepository.delete(user.id);
+  for (const user of userService.list()) {
+    userService.remove(user.id);
   }
 });
 
@@ -58,7 +56,7 @@ describe("GET /users", () => {
   });
 
   it("登録済みユーザーを含む配列を返す", async () => {
-    userRepository.create({ name: "Alice", email: "alice@example.com" });
+    userService.create({ name: "Alice", email: "alice@example.com" });
     const res = await app.request("/users");
     expect(res.status).toBe(200);
     const body = (await res.json()) as JsonRecord[];
@@ -69,7 +67,7 @@ describe("GET /users", () => {
 
 describe("GET /users/:id", () => {
   it("存在する id で 200 + User を返す", async () => {
-    const user = userRepository.create({ name: "Alice", email: "alice@example.com" });
+    const user = userService.create({ name: "Alice", email: "alice@example.com" });
     const res = await app.request(`/users/${user.id}`);
     expect(res.status).toBe(200);
     const body = (await res.json()) as JsonRecord;
@@ -84,7 +82,7 @@ describe("GET /users/:id", () => {
 
 describe("PUT /users/:id", () => {
   it("有効なボディで 200 + 更新された User を返す", async () => {
-    const user = userRepository.create({ name: "Alice", email: "alice@example.com" });
+    const user = userService.create({ name: "Alice", email: "alice@example.com" });
     const res = await app.request(`/users/${user.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -106,7 +104,7 @@ describe("PUT /users/:id", () => {
   });
 
   it("name・email 両方省略（空ボディ相当）で 200 を返す（TypeSpec では両フィールドともオプション）", async () => {
-    const user = userRepository.create({ name: "Alice", email: "alice@example.com" });
+    const user = userService.create({ name: "Alice", email: "alice@example.com" });
     const res = await app.request(`/users/${user.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -118,7 +116,7 @@ describe("PUT /users/:id", () => {
 
 describe("DELETE /users/:id", () => {
   it("存在する id で 204 を返す", async () => {
-    const user = userRepository.create({ name: "Alice", email: "alice@example.com" });
+    const user = userService.create({ name: "Alice", email: "alice@example.com" });
     const res = await app.request(`/users/${user.id}`, { method: "DELETE" });
     expect(res.status).toBe(204);
   });

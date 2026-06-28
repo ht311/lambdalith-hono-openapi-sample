@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "biome": {
+    "linterOptions": {
+      "rules": {
+        "curly": ["error", "all"]
+      }
+    }
+  },
   "scripts": {
     "generate:typespec": "tsp compile api/main.tsp",
     "generate:schemas": "node scripts/generate-schemas.js",
