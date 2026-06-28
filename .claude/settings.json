@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Bash(*)"
+    ],
+    "deny": [
+      "Bash(git push:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push --force-with-lease:*)",
+      "Bash(git clean -fd:*)",
+      "Bash(git clean -fdx:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git checkout -- .:*)",
+      "Bash(git restore .:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git filter-repo:*)"
+    ],
+    "defaultMode": "bypassPermissions"
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "enabledPlugins": {
+    "example-skills@anthropic-agent-skills": true
+  }
+}
