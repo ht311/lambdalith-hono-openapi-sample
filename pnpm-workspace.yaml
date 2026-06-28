@@ -1,4 +1,5 @@
 # モノレポではない。pnpm がネイティブバイナリをビルドする依存を許可するための設定。
 # esbuild はインストール時にプラットフォーム向けバイナリをビルドする。
-onlyBuiltDependencies:
-  - esbuild
+# pnpm v11 では allowBuilds を使う（onlyBuiltDependencies は v10 以前の形式）。
+allowBuilds:
+  esbuild: true
