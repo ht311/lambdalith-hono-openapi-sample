@@ -7,19 +7,26 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/terraform:1": {}
+    "ghcr.io/devcontainers/features/terraform:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts",
+      "packageManager": "pnpm",
+      "packageManagerVersion": "11.6.0"
+    }
   },
   "customizations": {
     "vscode": {
       "extensions": [
         "hashicorp.terraform",
-        "hediet.vscode-drawio"
+        "hediet.vscode-drawio",
+        "typespec.typespec-vscode",
+        "42crunch.vscode-openapi"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash"
       }
     }
   },
-  "postCreateCommand": "sudo npm install -g @anthropic-ai/claude-code",
+  "postCreateCommand": "bash -l .devcontainer/postcreate.sh",
   "remoteUser": "vscode"
 }

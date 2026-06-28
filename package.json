@@ -1,0 +1,41 @@
+{
+  "name": "lambdalith-hono-openapi-sample",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:typespec": "tsp compile api/main.tsp",
+    "generate:schemas": "node scripts/generate-schemas.js",
+    "generate:types": "openapi-typescript generated/openapi.yaml -o src/generated/openapi.d.ts",
+    "generate": "pnpm generate:typespec && pnpm generate:schemas && pnpm generate:types",
+    "dev": "tsx --import ./scripts/yaml-loader.mjs watch src/dev.ts",
+    "build": "pnpm generate && node scripts/build.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "biome check src",
+    "lint:fix": "biome check --write src",
+    "format": "biome format --write src"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.8.0",
+    "@scalar/hono-api-reference": "^0.11.6",
+    "hono": "^4.12.27",
+    "yaml": "^2.9.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.0",
+    "@hono/node-server": "^2.0.6",
+    "@types/node": "^26.0.1",
+    "@typespec/compiler": "^1.13.0",
+    "@typespec/http": "^1.13.0",
+    "@typespec/openapi": "^1.13.0",
+    "@typespec/openapi3": "^1.13.0",
+    "esbuild": "^0.25.5",
+    "openapi-typescript": "^7.13.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.0.0"
+  }
+}

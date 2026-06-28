@@ -1,0 +1,4 @@
+# モノレポではない。pnpm がネイティブバイナリをビルドする依存を許可するための設定。
+# esbuild はインストール時にプラットフォーム向けバイナリをビルドする。
+onlyBuiltDependencies:
+  - esbuild

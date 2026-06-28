@@ -46,7 +46,7 @@ terraform.tfvars
 !terraform.tfvars.example
 
 # =====================
-# Node.js
+# Node.js/pnpm
 # =====================
 node_modules/
 npm-debug.log*
@@ -56,6 +56,7 @@ yarn-error.log*
 .npm/
 dist/
 .cache/
+.pnpm-store
 
 # =====================
 # ビルド成果物
@@ -81,3 +82,9 @@ memo.md
 # Claude Code（個人設定はgit管理外）
 # =====================
 .claude/settings.local.json
+
+# =====================
+# 自動生成ファイル
+# =====================
+src/generated/
+*.zip
