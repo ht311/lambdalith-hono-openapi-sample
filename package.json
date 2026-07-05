@@ -34,7 +34,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.5.2",
     "@hono/node-server": "^2.0.6",
-    "@types/node": "^26.0.1",
+    "@types/node": "^26.1.0",
     "@typespec/compiler": "^1.13.0",
     "@typespec/http": "^1.13.0",
     "@typespec/openapi": "^1.13.0",
