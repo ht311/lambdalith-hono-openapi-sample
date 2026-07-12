@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: ^0.8.0
-        version: 0.8.0(hono@4.12.27)(zod@3.25.76)
+        version: 0.8.0(hono@4.12.29)(zod@3.25.76)
       '@scalar/hono-api-reference':
         specifier: ^0.11.9
-        version: 0.11.9(hono@4.12.27)
+        version: 0.11.9(hono@4.12.29)
       hono:
-        specifier: ^4.12.27
-        version: 4.12.27
+        specifier: ^4.12.29
+        version: 4.12.29
       yaml:
         specifier: ^2.9.0
         version: 2.9.0
@@ -29,7 +29,7 @@ importers:
         version: 2.5.2
       '@hono/node-server':
         specifier: ^2.0.8
-        version: 2.0.8(hono@4.12.27)
+        version: 2.0.8(hono@4.12.29)
       '@types/node':
         specifier: ^26.1.1
         version: 26.1.1
@@ -864,8 +864,8 @@ packages:
     resolution: {integrity: sha512-QRbvDIbx6YklUe6RxeTeleMR0yv3cYH6PsPZHcnVn7xv7zO1BHN8r0XETu8n6Ye3Q+ahtSarc3WgtNWmehIBfA==}
     engines: {node: '>=18'}
 
-  hono@4.12.27:
-    resolution: {integrity: sha512-1yrb/+w6HWQJrUCLkJ2IF5jNIPvvFkblV5RNOYl6bV+OA6p9GLcMpHFFGTosSvHvcAUibuUukRqhlYI4z32C7Q==}
+  hono@4.12.29:
+    resolution: {integrity: sha512-1hNiRjawYrLq/4m3DQQjPGFg0VZkk4RjQJDff/excI6Dm9BiL75qxGrd7/c6YOxPdq6AscP3LiXhQ6fKFC1Waw==}
     engines: {node: '>=16.9.0'}
 
   https-proxy-agent@7.0.6:
@@ -1354,13 +1354,13 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@hono/node-server@2.0.8(hono@4.12.27)':
+  '@hono/node-server@2.0.8(hono@4.12.29)':
     dependencies:
-      hono: 4.12.27
+      hono: 4.12.29
 
-  '@hono/zod-validator@0.8.0(hono@4.12.27)(zod@3.25.76)':
+  '@hono/zod-validator@0.8.0(hono@4.12.29)(zod@3.25.76)':
     dependencies:
-      hono: 4.12.27
+      hono: 4.12.29
       zod: 3.25.76
 
   '@inquirer/ansi@2.0.7': {}
@@ -1594,10 +1594,10 @@ snapshots:
 
   '@scalar/helpers@0.9.0': {}
 
-  '@scalar/hono-api-reference@0.11.9(hono@4.12.27)':
+  '@scalar/hono-api-reference@0.11.9(hono@4.12.29)':
     dependencies:
       '@scalar/client-side-rendering': 0.3.2
-      hono: 4.12.27
+      hono: 4.12.29
 
   '@scalar/json-magic@0.12.17':
     dependencies:
@@ -1877,7 +1877,7 @@ snapshots:
 
   get-east-asian-width@1.6.0: {}
 
-  hono@4.12.27: {}
+  hono@4.12.29: {}
 
   https-proxy-agent@7.0.6(supports-color@10.2.2):
     dependencies:
