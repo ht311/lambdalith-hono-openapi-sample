@@ -35,7 +35,7 @@
     "@biomejs/biome": "^2.5.2",
     "@hono/node-server": "^2.0.8",
     "@types/node": "^26.1.1",
-    "@typespec/compiler": "^1.13.0",
+    "@typespec/compiler": "^1.14.0",
     "@typespec/http": "^1.13.0",
     "@typespec/openapi": "^1.13.0",
     "@typespec/openapi3": "^1.13.0",
