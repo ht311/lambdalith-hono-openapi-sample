@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@hono/zod-validator':
-        specifier: ^0.8.0
-        version: 0.8.0(hono@4.12.29)(zod@3.25.76)
+        specifier: ^0.9.0
+        version: 0.9.0(hono@4.12.29)(zod@3.25.76)
       '@scalar/hono-api-reference':
         specifier: ^0.11.11
         version: 0.11.11(hono@4.12.29)
@@ -286,10 +286,10 @@ packages:
     peerDependencies:
       hono: ^4
 
-  '@hono/zod-validator@0.8.0':
-    resolution: {integrity: sha512-5uS4S1/LKtZQYvD4BtpPUFkOv8d1wNxHHrChm26buMiEYc1FrHWvDUaKVBwkiVtvSExHSpLGDvcnpI2Copyj9w==}
+  '@hono/zod-validator@0.9.0':
+    resolution: {integrity: sha512-n0ZSXmCiHVIp4Y5wlOOyZCeTd/rsawA/qW1cipB8QOYKZ9N8Tk0nZUZCXho9cu374AN4JpDNKioNKBJ/W+LBug==}
     peerDependencies:
-      hono: '>=4.10.0'
+      hono: '>=4.11.2'
       zod: ^3.25.0 || ^4.0.0
 
   '@inquirer/ansi@2.0.7':
@@ -1365,7 +1365,7 @@ snapshots:
     dependencies:
       hono: 4.12.29
 
-  '@hono/zod-validator@0.8.0(hono@4.12.29)(zod@3.25.76)':
+  '@hono/zod-validator@0.9.0(hono@4.12.29)(zod@3.25.76)':
     dependencies:
       hono: 4.12.29
       zod: 3.25.76
