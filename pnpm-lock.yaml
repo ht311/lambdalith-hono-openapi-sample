@@ -28,8 +28,8 @@ importers:
         specifier: ^2.5.7
         version: 2.5.7
       '@hono/node-server':
-        specifier: ^2.0.12
-        version: 2.0.12(hono@4.12.32)
+        specifier: ^2.1.0
+        version: 2.1.0(hono@4.12.32)
       '@types/node':
         specifier: ^26.1.2
         version: 26.1.2
@@ -284,8 +284,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hono/node-server@2.0.12':
-    resolution: {integrity: sha512-eWpQYr67tqJLeaSUl0Q+TquuYfUdTibpOJlUMV2FfUP7+KqCC5TufnwnlXL6mobZBJbGAYRd7ZvEBDCbLInjhg==}
+  '@hono/node-server@2.1.0':
+    resolution: {integrity: sha512-XovyyCCnBzW+zKu+z/zq8hwNs4KOR5rEMAOxo2f40Q5xoOI37IMm6MIg2COOUtUApo0i6850MTBKH2u4QLGIqg==}
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4
@@ -1378,7 +1378,7 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@hono/node-server@2.0.12(hono@4.12.32)':
+  '@hono/node-server@2.1.0(hono@4.12.32)':
     dependencies:
       hono: 4.12.32
 
