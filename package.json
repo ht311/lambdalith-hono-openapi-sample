@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.9",
-    "@hono/node-server": "^2.1.0",
+    "@hono/node-server": "^2.1.1",
     "@types/node": "^26.2.0",
     "@typespec/compiler": "^1.14.0",
     "@typespec/http": "^1.14.0",
