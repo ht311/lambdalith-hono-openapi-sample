@@ -40,11 +40,11 @@ importers:
         specifier: ^1.14.0
         version: 1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))
       '@typespec/openapi':
-        specifier: ^1.13.0
-        version: 1.13.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))
+        specifier: ^1.14.0
+        version: 1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))
       '@typespec/openapi3':
         specifier: ^1.13.0
-        version: 1.13.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))(@typespec/openapi@1.13.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))))
+        version: 1.13.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))(@typespec/openapi@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))))
       esbuild:
         specifier: ^0.28.2
         version: 0.28.2
@@ -692,12 +692,12 @@ packages:
       '@typespec/xml':
         optional: true
 
-  '@typespec/openapi@1.13.0':
-    resolution: {integrity: sha512-omPc9n+LM2WvjYwnIf31RCxmG17fFUOVLBRsWg4T1mbcsNCj4grnNP7Lwt+irIZCiKtmLKxq3ViE7jYixCkZ3g==}
+  '@typespec/openapi@1.14.0':
+    resolution: {integrity: sha512-KL7kImPhCXRmxpHVt1k7TWaa4bb3NbSeUx2rxyxeq7lYZFllI6/NYRCTOI/5JOrbElWmmSxrajU9K9IAKI6PkQ==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
-      '@typespec/compiler': ^1.13.0
-      '@typespec/http': ^1.13.0
+      '@typespec/compiler': ^1.14.0
+      '@typespec/http': ^1.14.0
 
   '@vitest/expect@3.2.6':
     resolution: {integrity: sha512-1+7q9BtaKzEmO+fmNT3kYvoNn5Y71XWAx2Q5HRim4tTVRQVRv4uJFAQ5FbK0OPUeNP/WmVCpxYxoJdvuHVjzBQ==}
@@ -1706,7 +1706,7 @@ snapshots:
     dependencies:
       '@typespec/compiler': 1.14.0(@types/node@26.2.0)
 
-  '@typespec/openapi3@1.13.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))(@typespec/openapi@1.13.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))))':
+  '@typespec/openapi3@1.13.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))(@typespec/openapi@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))))':
     dependencies:
       '@scalar/json-magic': 0.12.17
       '@scalar/openapi-parser': 0.28.8
@@ -1714,10 +1714,10 @@ snapshots:
       '@typespec/asset-emitter': 0.79.1(@typespec/compiler@1.14.0(@types/node@26.2.0))
       '@typespec/compiler': 1.14.0(@types/node@26.2.0)
       '@typespec/http': 1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))
-      '@typespec/openapi': 1.13.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))
+      '@typespec/openapi': 1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))
       yaml: 2.9.0
 
-  '@typespec/openapi@1.13.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))':
+  '@typespec/openapi@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))(@typespec/http@1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0)))':
     dependencies:
       '@typespec/compiler': 1.14.0(@types/node@26.2.0)
       '@typespec/http': 1.14.0(@typespec/compiler@1.14.0(@types/node@26.2.0))
