@@ -32,7 +32,7 @@
     "zod": "^3.25.67"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.15",
+    "@biomejs/biome": "^2.6.2",
     "@hono/node-server": "^2.1.5",
     "@types/node": "^26.6.4",
     "@typespec/compiler": "^1.17.0",
