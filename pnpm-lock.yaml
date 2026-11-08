@@ -12,8 +12,8 @@ importers:
         specifier: ^0.9.1
         version: 0.9.1(hono@4.13.14)(zod@3.25.76)
       '@scalar/hono-api-reference':
-        specifier: ^0.12.16
-        version: 0.12.16(hono@4.13.14)
+        specifier: ^0.12.17
+        version: 0.12.17(hono@4.13.14)
       hono:
         specifier: ^4.13.14
         version: 4.13.14
@@ -533,8 +533,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@scalar/client-side-rendering@0.4.15':
-    resolution: {integrity: sha512-9jc8mcnwlQpadi8F7WjC2r7Oav5DJDh/wVktXqNW1HMw7ShxvBdtzBAgBEq9qCfauysYcfSPc8DtyRN0OCsmkQ==}
+  '@scalar/client-side-rendering@0.4.16':
+    resolution: {integrity: sha512-C6g3yGa6DwK++L0yxB6oebTc4fCdU/n/FrOK+08UdK4RK24bTvgcCcvjh8k6OVXDMyCodSf73ZERwVWYlnkaxA==}
     engines: {node: '>=22'}
 
   '@scalar/helpers@0.16.4':
@@ -545,8 +545,8 @@ packages:
     resolution: {integrity: sha512-M34CLRCttqC1bXthI/QSzQj0s5C6nrU2PFWf/vOT3RpycbiGDGQbqR+5RfFzpOIQvRqbHfNdcRbeiZBw+vCbkQ==}
     engines: {node: '>=22'}
 
-  '@scalar/hono-api-reference@0.12.16':
-    resolution: {integrity: sha512-MyFpUuahtYeqoVOr4mZQ50l0E39u+Yg2G3I7g+0Kzz5UwLhtim2oNJknBtMajKg4wwuQnhwVsQUS0H58nSsZWQ==}
+  '@scalar/hono-api-reference@0.12.17':
+    resolution: {integrity: sha512-qkXl07vyqTY6OC0LtrNO7ft/k9bb0oMPjjWLZNCPuLb10G3r3F9sFf4FclD9EWwx6om5UZrl9rgq711os2zUNg==}
     engines: {node: '>=22'}
     peerDependencies:
       hono: ^4.12.5
@@ -567,12 +567,12 @@ packages:
     resolution: {integrity: sha512-D5b0rGLLZgmkO9mdW2j/ND1KBlH1u3RCpr87HPxv9P9ZSr6PtM5iLqFOJq0ACiaHjY2mikCrxgDmnUEhTzRpHQ==}
     engines: {node: '>=22'}
 
-  '@scalar/schemas@0.15.0':
-    resolution: {integrity: sha512-YxvmWVymAC536CFC84SGyt8PD57UqB5GOvr73y7Oj1Bjf8HMUUowzEt3AM3w9s21sR8ZKkncbt1R3r8sYsASnA==}
+  '@scalar/schemas@0.16.0':
+    resolution: {integrity: sha512-SHhRIH/9x86mRmJcyMgnMMWxDNzRtuyb93anz5zfWV2XuV7gZ1Br6E5Ll2Ygoc3HoKjOQkSdSVs11oKQxjvKMw==}
     engines: {node: '>=22'}
 
-  '@scalar/types@0.25.2':
-    resolution: {integrity: sha512-3QGFX9DOvk8jAEPOcwCEbkLpagFvvjoeuUCTUyYUlsu1Mf5itUaw+RL4mfD3Udbqk9xfVTSlkm2Xa357vwWlxw==}
+  '@scalar/types@0.26.0':
+    resolution: {integrity: sha512-T78Dj1Q+W0E1RsMyPoydfR+L+p9IUIkntBCRYlWaRibM98jAxABRYGQoU/qDHX0PR1IAFdE+d7ZqslypZbJzcg==}
     engines: {node: '>=22'}
 
   '@scalar/validation@0.6.7':
@@ -1503,20 +1503,20 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.62.2':
     optional: true
 
-  '@scalar/client-side-rendering@0.4.15':
+  '@scalar/client-side-rendering@0.4.16':
     dependencies:
       '@scalar/helpers': 0.16.4
-      '@scalar/schemas': 0.15.0
-      '@scalar/types': 0.25.2
+      '@scalar/schemas': 0.16.0
+      '@scalar/types': 0.26.0
       '@scalar/validation': 0.6.7
 
   '@scalar/helpers@0.16.4': {}
 
   '@scalar/helpers@0.9.0': {}
 
-  '@scalar/hono-api-reference@0.12.16(hono@4.13.14)':
+  '@scalar/hono-api-reference@0.12.17(hono@4.13.14)':
     dependencies:
-      '@scalar/client-side-rendering': 0.4.15
+      '@scalar/client-side-rendering': 0.4.16
       hono: 4.13.14
 
   '@scalar/json-magic@0.12.17':
@@ -1544,12 +1544,13 @@ snapshots:
     dependencies:
       '@scalar/openapi-types': 0.9.1
 
-  '@scalar/schemas@0.15.0':
+  '@scalar/schemas@0.16.0':
     dependencies:
       '@scalar/helpers': 0.16.4
+      '@scalar/types': 0.26.0
       '@scalar/validation': 0.6.7
 
-  '@scalar/types@0.25.2':
+  '@scalar/types@0.26.0':
     dependencies:
       '@scalar/helpers': 0.16.4
       nanoid: 5.1.16
