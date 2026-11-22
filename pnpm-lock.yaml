@@ -37,14 +37,14 @@ importers:
         specifier: ^1.18.0
         version: 1.18.0(@types/node@26.6.6)
       '@typespec/http':
-        specifier: ^1.17.0
-        version: 1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6))
+        specifier: ^1.18.0
+        version: 1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6))
       '@typespec/openapi':
         specifier: ^1.16.0
-        version: 1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))
+        version: 1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))
       '@typespec/openapi3':
         specifier: ^1.13.0
-        version: 1.13.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))(@typespec/openapi@1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6))))
+        version: 1.13.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))(@typespec/openapi@1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6))))
       esbuild:
         specifier: ^0.28.2
         version: 0.28.2
@@ -602,12 +602,12 @@ packages:
     engines: {node: '>=22.0.0'}
     hasBin: true
 
-  '@typespec/http@1.17.0':
-    resolution: {integrity: sha512-XLwL+NvkQ4hWhnIwZms2CNoxCULFt/jMa+QGaKg4hDwPFLvrXsUm7JWPHi1QOcwzGFG8Z1NglqRPzKl2der2ww==}
+  '@typespec/http@1.18.0':
+    resolution: {integrity: sha512-5RmsHcfJYIEKanRQDNYs4kRQQBtVDW46sCNdpbG1fgORzqjEP/Nkx+jFRHW99RlLwcAzX5VbrzM2TgzNCmcPfg==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
-      '@typespec/compiler': ^1.17.0
-      '@typespec/streams': ^0.87.0
+      '@typespec/compiler': ^1.18.0
+      '@typespec/streams': ^0.88.0
     peerDependenciesMeta:
       '@typespec/streams':
         optional: true
@@ -1600,25 +1600,25 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@typespec/http@1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6))':
+  '@typespec/http@1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6))':
     dependencies:
       '@typespec/compiler': 1.18.0(@types/node@26.6.6)
 
-  '@typespec/openapi3@1.13.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))(@typespec/openapi@1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6))))':
+  '@typespec/openapi3@1.13.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))(@typespec/openapi@1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6))))':
     dependencies:
       '@scalar/json-magic': 0.12.17
       '@scalar/openapi-parser': 0.28.8
       '@scalar/openapi-types': 0.9.1
       '@typespec/asset-emitter': 0.79.1(@typespec/compiler@1.18.0(@types/node@26.6.6))
       '@typespec/compiler': 1.18.0(@types/node@26.6.6)
-      '@typespec/http': 1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6))
-      '@typespec/openapi': 1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))
+      '@typespec/http': 1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6))
+      '@typespec/openapi': 1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))
       yaml: 2.9.1
 
-  '@typespec/openapi@1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))':
+  '@typespec/openapi@1.16.0(@typespec/compiler@1.18.0(@types/node@26.6.6))(@typespec/http@1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6)))':
     dependencies:
       '@typespec/compiler': 1.18.0(@types/node@26.6.6)
-      '@typespec/http': 1.17.0(@typespec/compiler@1.18.0(@types/node@26.6.6))
+      '@typespec/http': 1.18.0(@typespec/compiler@1.18.0(@types/node@26.6.6))
 
   '@vitest/expect@3.2.6':
     dependencies:
